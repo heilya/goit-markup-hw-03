@@ -1,0 +1,189 @@
+:root {
+	--primary-font: "Roboto", sans-serif;
+	--secondary-font: "Raleway", sans-serif;
+	--primary-text-color: #2e2f42;
+	--secondary-text-color: #434455;
+	--footer-text-color: #e7e9fc;
+	--active-color: #404bbf;
+	--brand-color: #4d5ae5;
+	--primari-page-color: #ffffff;
+	--secondary-page-color: #f4f4fd;
+	--border-color: #e7e9fc;
+}
+body {
+	font-family: var(--primary-font);
+	color: var(--primary-text-color);
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+}
+.list {
+	list-style: none;
+}
+.link {
+	text-decoration: none;
+}
+/* Header */
+.logo {
+	font-family: var(--secondary-font);
+	font-style: normal;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 1.33;
+	display: flex;
+	align-items: center;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--primary-text-color);
+}
+.logo-accent {
+	color: var(--brand-color);
+}
+.menu-link {
+	color: var(--primary-text-color);
+	font-weight: 500;
+}
+.menu-link:hover,
+.menu-link:focus {
+	color: var(--active-color);
+}
+.mail,
+.phone {
+	font-style: normal;
+	color: var(--secondary-text-color);
+}
+.mail:hover,
+.mail:focus,
+.phone:hover,
+.phone:focus {
+	color: var(--active-color);
+}
+/* Hero section */
+.hero {
+	background-color: var(--primary-text-color);
+}
+.hero-title {
+	font-weight: 700;
+	font-size: 56px;
+	line-height: 1.07;
+	color: var(--primari-page-color);
+}
+.hero-btn {
+	font-family: inherit;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.5;
+	display: flex;
+	letter-spacing: 0.04em;
+	color: var(--primari-page-color);
+	background-color: var(--brand-color);
+	cursor: pointer;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+	background-color: var(--active-color);
+}
+/* Our benefits */
+.hidden-title {
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	-webkit-clip-path: inset(50%);
+	clip-path: inset(50%);
+	margin: -1px;
+}
+
+.benefits-subtitle {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+}
+.benefits-text {
+	color: var(--secondary-text-color);
+}
+/* What are we doing */
+.examples-title,
+.page-team-title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.11;
+	text-transform: capitalize;
+}
+.examples-list-item {
+}
+/* Our Team */
+.page-team {
+	background-color: var(--secondary-page-color);
+}
+.page-team-list-item {
+	background-color: var(--primari-page-color);
+}
+.page-team-subtitle {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+}
+.page-team-text {
+	color: var(--secondary-text-color);
+}
+/* Footer */
+.logo-footer {
+	font-family: var(--secondary-font);
+	font-style: normal;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 1.33;
+	display: flex;
+	align-items: center;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--secondary-page-color);
+}
+.footer {
+	background-color: var(--primary-text-color);
+}
+.footer-text {
+	color: var(--footer-text-color);
+}
+/* Portfolio */
+.portfolio-btn {
+	font-family: inherit;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.5;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.04em;
+	color: var(--brand-color);
+	background-color: var(--secondary-page-color);
+	border: 1px solid var(--border-color);
+	border-radius: 4px;
+	cursor: pointer;
+}
+.portfolio-btn:active,
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+	background: var(--active-color);
+	color: var(--primari-page-color);
+	border-color: var(--active-color);
+}
+
+.portfolio-subtitle {
+	color: var(--primary-text-color);
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+}
+.portfolio-text {
+	color: var(--secondary-text-color);
+}
