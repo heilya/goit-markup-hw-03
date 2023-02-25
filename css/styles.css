@@ -27,6 +27,8 @@ ol {
 }
 img {
 	display: block;
+	max-width: 100%;
+	height: auto;
 }
 .container {
 	width: 1158px;
@@ -58,12 +60,7 @@ body {
 }
 /* Header */
 .header {
-	padding-top: 24px;
-	padding-bottom: 24px;
-	border: 1px solid var(--border-color);
-	border-top: none;
-	border-left: none;
-	border-right: none;
+	border-bottom: 1px solid var(--border-color);
 }
 .navigation-container {
 	display: flex;
@@ -87,6 +84,8 @@ body {
 
 .logo {
 	margin-right: 76px;
+	padding-top: 24px;
+	padding-bottom: 24px;
 	font-family: var(--secondary-font);
 	font-style: normal;
 	font-weight: 800;
@@ -102,6 +101,8 @@ body {
 	color: var(--brand-color);
 }
 .menu-link {
+	padding-top: 24px;
+	padding-bottom: 24px;
 	color: var(--primary-text-color);
 	font-weight: 500;
 }
@@ -112,12 +113,14 @@ body {
 .contact {
 	margin-left: auto;
 }
-.mail {
+.contact-item:not(:last-child) {
 	margin-right: 40px;
 }
 
 .mail,
 .phone {
+	padding-top: 24px;
+	padding-bottom: 24px;
 	font-style: normal;
 	color: var(--secondary-text-color);
 }
@@ -328,7 +331,8 @@ body {
 .portfolio-examples {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 24px;
+	gap: 48px;
+	column-gap: 24px;
 }
 
 .portfolio-examples-item {
